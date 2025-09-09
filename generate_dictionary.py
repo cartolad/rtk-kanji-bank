@@ -3,6 +3,8 @@
 import argparse
 import json
 import zipfile
+import csv
+from pathlib import Path
 
 def main():
     parser = argparse.ArgumentParser()
@@ -44,10 +46,14 @@ def generate_tags():
     return obj
 
 def generate_kanji_bank():
-    obj = [
-        ["今", "", "", "rtk", ["now"], {}],
-        ["高", "", "", "rtk", ["tall"], {}],
-    ]
+    obj = []
+    rtk_csv_path = Path(__file__).parent / "rtk.csv"
+    with open(rtk_csv_path) as rtk_csv_f:
+        reader = csv.DictReader(rtk_csv_f)
+        for row in reader:
+            obj.append([
+                [row["character"], "", "", "rtk", [row["keyword"]], {}],
+            ])
     return obj
 
 
