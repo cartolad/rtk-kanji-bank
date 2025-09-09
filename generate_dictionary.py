@@ -29,7 +29,7 @@ def main():
 def generate_index():
     obj = {
         "title": "Remembering the Kanji",
-        "revision": "0.1",
+        "revision": "0.2",
         "format": 3,
         "sequenced": False,
         "description": "Kanji keywords from Remembering the Kanji",
