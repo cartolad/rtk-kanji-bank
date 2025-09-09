@@ -33,7 +33,7 @@ def generate_index():
         "format": 3,
         "sequenced": False,
         "description": "Kanji keywords from Remembering the Kanji",
-        "author": "tbc",
+        "author": "James W. Heisig",
         "url": "tbc",
         "attribution": "tbc"
     }
