@@ -51,9 +51,9 @@ def generate_kanji_bank():
     with open(rtk_csv_path) as rtk_csv_f:
         reader = csv.DictReader(rtk_csv_f)
         for row in reader:
-            obj.append([
+            obj.append(
                 [row["character"], "", "", "rtk", [row["keyword"]], {}],
-            ])
+            )
     return obj
 
 
