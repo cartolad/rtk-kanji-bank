@@ -34,7 +34,7 @@ def generate_index():
         "sequenced": False,
         "description": "Kanji keywords from Remembering the Kanji",
         "author": "James W. Heisig",
-        "url": "tbc",
+        "url": "https://github.com/cartolad/rtk-kanji-bank/releases/latest/download/rtk.zip",
         "attribution": "tbc"
     }
     return obj
