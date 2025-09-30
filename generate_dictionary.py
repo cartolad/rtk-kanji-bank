@@ -27,9 +27,11 @@ def main():
     print(f"Wrote '{output_filename}'")
 
 def generate_index():
+    with open(Path(__file__).parent / "version-number") as v_f:
+        revision = v_f.read().strip()
     obj = {
         "title": "Remembering the Kanji",
-        "revision": "0.2",
+        "revision": revision,
         "format": 3,
         "sequenced": False,
         "description": "Kanji keywords from Remembering the Kanji",
