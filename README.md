@@ -12,4 +12,5 @@ enabled dictionaries".  Then click "Import" and paste the URL:
 
 After the dictionary is imported, order is important.  If you have other Kanji
 dictionaries installed, the order of the entries in your popup window is
-determined bby the dictionary order.  You probably want to have RTK first.
+determined bby the dictionary order.  You probably want to have RTK ahead of
+other Kanji dictionaries such as KANJIDIC.
